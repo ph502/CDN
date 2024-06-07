@@ -9,6 +9,6 @@ git clone https://github.com/ph502/CDN
 give it execution permissions while inside the CDN folder you can enter with cd CDN/
 and then write 
 chmod +x *
-run the CDN you want to verify using the ./run command
+run the CDN you want to verify using the sh command
 example
-./runcloudflare.sh
+sh runcloudflare.sh
