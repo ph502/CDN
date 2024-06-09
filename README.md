@@ -1,14 +1,30 @@
-1. install httpx in termux using command 
-pkg install golang
+# Update and upgrade Termux packages
+pkg update -y && pkg upgrade -y
+
+# Install Go
+pkg install golang -y
+
+# Install Git
+pkg install git -y
+
+# Install httpx
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 
-2. After having installed httpx, place this command in termux
-3. echo 'PATH="$PATH:$HOME/go/bin"' >> $HOME/.bashrc && source $HOME/.bashrc
-4. y and then I wrote exit in the terminalthen clone the repository using 
-git clone https://github.com/ph502/CDN 
-give it execution permissions while inside the CDN folder you can enter with cd CDN/
-and then write 
+# Add the path of the Go binaries to the PATH
+echo 'export PATH="$PATH:$HOME/go/bin"' >> ~/.bashrc
+
+# Reload .bashrc to apply changes
+source ~/.bashrc
+
+# Clone the repository
+git clone https://github.com/ph502/CDN
+
+# Enter the cloned repository folder
+CD CDN
+
+# Give execute permissions to all files in the folder
 chmod +x *
-run the CDN you want to verify using the sh command
+
+run the binaries with the sh command 
 example
 sh runcloudflare.sh
