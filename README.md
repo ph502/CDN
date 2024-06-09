@@ -20,7 +20,7 @@ source ~/.bashrc
 git clone https://github.com/ph502/CDN
 
 # Enter the cloned repository folder
-CD CDN
+cd CDN
 
 # Give execute permissions to all files in the folder
 chmod +x *
