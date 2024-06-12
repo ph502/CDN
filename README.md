@@ -28,3 +28,6 @@ chmod +x *
 run the binaries with the sh command 
 example
 sh runcloudflare.sh
+or you can also view the files in the folder using the command 
+ls
+which is to list the folder so you will know what the binaries are called to execute
