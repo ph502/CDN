@@ -1,2 +1,2 @@
 #!/bin/sh
-httpx -l bunny.txt -mc 200 -server -p 80,443 -t 1000 -o bunnyresults.txt
+httpx -l bunny.txt -sc -ms bunny.net -p 80,443 -t 1000 -o resubunny.txt
