@@ -1,5 +1,5 @@
 # Update and upgrade Termux packages
-pkg update -y && pkg upgrade -y
+pkg update -y && pkg upgrade 
 
 # Install Go
 pkg install golang -y
